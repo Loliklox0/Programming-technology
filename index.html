@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Интерактивный калькулятор</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #2b1f47; /* тёмно-фиолетовый */
+      font-family: Arial, sans-serif;
+    }
+
+    .calc-container {
+      background: #3b2a63; /* немного светлее */
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      text-align: center;
+      width: 300px;
+      color: white;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #d6b4ff;
+      font-weight: 600;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background: #5a418c;
+      color: white;
+    }
+
+    button {
+      width: 45%;
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      border-radius: 8px;
+      background: #8e5aff;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #a978ff;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #e6d4ff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="calc-container">
+    <h2>Интерактивный калькулятор</h2>
+
+    <input id="numA" type="number" placeholder="Число A" />
+    <input id="numB" type="number" placeholder="Число B" />
+
+    <div>
+      <button id="btnAdd">A + B</button>
+      <button id="btnSub">A - B</button>
+      <button id="btnMul">A × B</button>
+      <button id="btnDiv">A ÷ B</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
